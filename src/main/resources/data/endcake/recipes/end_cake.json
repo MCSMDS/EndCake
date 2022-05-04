@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "ACA",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:ender_eye"
+        },
+        "B": {
+            "item": "minecraft:end_crystal"
+        },
+        "C": {
+            "item": "minecraft:cake"
+        }
+    },
+    "result": {
+        "item": "endcake:end_cake"
+    }
+}

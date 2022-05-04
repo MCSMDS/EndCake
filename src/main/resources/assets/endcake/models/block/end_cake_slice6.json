@@ -1,0 +1,44 @@
+{
+    "textures": {
+        "particle": "endcake:block/end_cake_side",
+        "bottom": "endcake:block/end_cake_bottom",
+        "top": "endcake:block/end_cake_top",
+        "side": "endcake:block/end_cake_side",
+        "inside": "endcake:block/end_cake_inner"
+    },
+    "elements": [
+        {
+            "from": [
+                13,
+                0,
+                1
+            ],
+            "to": [
+                15,
+                8,
+                15
+            ],
+            "faces": {
+                "down": {
+                    "texture": "#bottom",
+                    "cullface": "down"
+                },
+                "up": {
+                    "texture": "#top"
+                },
+                "north": {
+                    "texture": "#side"
+                },
+                "south": {
+                    "texture": "#side"
+                },
+                "west": {
+                    "texture": "#inside"
+                },
+                "east": {
+                    "texture": "#side"
+                }
+            }
+        }
+    ]
+}
