@@ -7,6 +7,8 @@ minecraft {
     runs {
         client {
         }
+        server {
+        }
     }
 }
 
