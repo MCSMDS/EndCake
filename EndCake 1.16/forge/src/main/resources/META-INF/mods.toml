@@ -1,0 +1,16 @@
+modLoader="javafml"
+loaderVersion="36"
+license="CC BY-NC-SA 4.0"
+issueTrackerURL="https://github.com/MCSMDS/EndCake/issues"
+[[mods]]
+    modId="endcake"
+    version="${version}"
+    displayName="EndCake"
+    displayURL="https://www.mcbbs.net/thread-1335771-1-1.html"
+    logoFile="pack.png"
+    authors="MCSMDS"
+    description="A End Cake mod."
+    [[dependencies.endcake]]
+        modId="minecraft"
+        mandatory=true
+        versionRange="[1.16,1.17)"

@@ -1,0 +1,17 @@
+allprojects {
+    apply plugin: "java"
+    archivesBaseName = project.mod_name
+    version = project.mod_version
+    compileJava.options.encoding = "UTF-8"
+    java.toolchain.languageVersion = JavaLanguageVersion.of(8)
+    repositories {
+    }
+}
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    subprojects.forEach {
+        dependsOn project(":${it.name}").build
+        from zipTree("${it.name}/build/libs/${project.mod_name}-${project.mod_version}-${it.name}.jar")
+    }
+}

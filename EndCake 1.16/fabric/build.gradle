@@ -1,0 +1,26 @@
+plugins {
+	id "fabric-loom" version "0.12-SNAPSHOT"
+}
+	
+loom {
+	setIntermediaryUrl("https://maven.fabricmc.net/net/fabricmc/intermediary/%1\$s/intermediary-%1\$s-v2.jar");
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings "net.fabricmc:yarn:${project.minecraft_version}+build.${project.fabric_mappings_version}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${project.fabric_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:0.42.0+1.16"
+	implementation project(":common")
+}
+
+processResources {
+	inputs.property "version", project.version
+	filesMatching("fabric.mod.json") {
+		expand "version": project.version
+	}
+}
+
+sourceSets.main.java.srcDirs project(":common").sourceSets.main.java
+sourceSets.main.resources.srcDirs project(":common").sourceSets.main.resources
+remapJar.archiveClassifier = name

@@ -1,0 +1,25 @@
+{
+    "schemaVersion": 1,
+    "id": "endcake",
+    "version": "${version}",
+    "name": "EndCake",
+    "description": "A End Cake mod.",
+    "authors": [
+        "MCSMDS"
+    ],
+    "contact": {
+        "homepage": "https://www.mcbbs.net/thread-1335771-1-1.html",
+        "issues": "https://github.com/MCSMDS/EndCake/issues"
+    },
+    "license": "CC BY-NC-SA 4.0",
+    "icon": "pack.png",
+    "entrypoints": {
+        "main": [
+            "com.mcsmds.endcake.EndCakeFabric"
+        ]
+    },
+    "depends": {
+        "fabric": "*",
+        "minecraft": "~1.16"
+    }
+}
